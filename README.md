@@ -36,8 +36,22 @@
 
 ## 開発環境構築
 
-### コンテナの作成と起動
+### 1. 必要環境
 
+本アプリを動作させるには、以下のツールがインストールされている必要があります。
+- Docker / Docker Compose
+- Git
+
+### 2. リポジトリのクローン
+
+bash
+git clone [https://github.com/your-repo-url.git](https://github.com/Akito-Ota/Attendance-Management-System.git)
+cd Attendance-Management-System
+
+### 3. 環境変数ファイル（.env）の作成
+.env.example をコピーして .env を作成します。
+cp .env.example .env
+その後、データベース接続情報を以下のように編集してください
 DB_CONNECTION=mysql
 DB_HOST=mysql
 DB_PORT=3306
@@ -45,9 +59,37 @@ DB_DATABASE=laravel_db
 DB_USERNAME=laravel_user
 DB_PASSWORD=laravel_pass
 
+### 4.Docker コンテナの起動
 
+docker compose up -d --build
 
+### 5.Laravel の初期設定
 
+docker compose exec php composer install
+docker compose exec php php artisan key:generate
+docker compose exec php php artisan migrate
+
+### 6.アクセスURL
+
+アプリケーショントップ：
+http://localhost/register
+
+従業員ログイン画面：
+http://localhost/staff/login
+
+管理者ログイン画面：
+http://localhost/admin/login
+
+phpMyAdmin：
+http://localhost:8080/
+
+phpMyAdmin のログイン情報は以下の通りです。
+
+サーバー：mysql
+
+ユーザー名：laravel_user
+
+パスワード：laravel_pass
 
 
 
@@ -82,3 +124,4 @@ DB_PASSWORD=laravel_pass
   管理者機能専用のルートファイルです。  
   勤怠修正、申請承認、スタッフ一覧、CSV 出力など、管理者向け機能を担当しています。  
 
+## ER図
