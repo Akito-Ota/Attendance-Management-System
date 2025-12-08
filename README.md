@@ -126,4 +126,5 @@ phpMyAdmin のログイン情報は以下の通りです。
 
 ## ER図
 
-![ER Diagram](./docs/er.png)
+![ER Diagram](./docs/er.png)<img width="1403" height="975" alt="Attendance Management System (3)" src="https://github.com/user-attachments/assets/3bdd54e7-8569-429e-9206-4c516475d34f" />
+
