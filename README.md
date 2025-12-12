@@ -65,9 +65,9 @@ docker compose up -d --build
 
 ### 5.Laravel の初期設定
 
-docker compose exec php composer install
-docker compose exec php php artisan key:generate
-docker compose exec php php artisan migrate
+- docker compose exec php composer install
+- docker compose exec php php artisan key:generate
+- docker compose exec php php artisan migrate
 
 ### 6.アクセスURL
 
