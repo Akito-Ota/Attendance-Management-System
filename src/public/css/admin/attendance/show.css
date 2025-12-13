@@ -143,3 +143,46 @@
     transition: background-color 0.3s, opacity 0.3s;
     letter-spacing: 1px;
 }
+
+
+@media screen and (max-width: 850px) {
+
+    .attendance_show {
+        padding: 40px 0;
+    }
+
+    .attendance_container {
+        width: 94%;
+    }
+
+    .attendance_table th,
+    .attendance_table td {
+        padding: 20px 20px;
+    }
+    .attendance_table th {
+        width: 25%;
+        font-size: 14px;
+    }
+
+    .attendance_table td {
+        width: 75%;
+    }
+
+    .time_input_group {
+        gap: 15px;
+    }
+
+    .form_time {
+        width: 120px;
+        font-size: 15px;
+        padding: 8px 5px;
+    }
+
+    .tilde {
+        font-size: 16px;
+    }
+
+    .form_textarea {
+        font-size: 14px;
+    }
+}
