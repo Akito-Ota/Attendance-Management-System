@@ -35,7 +35,7 @@ $rest2 = $detail->rests[1] ?? null;
                     <tr>
                         <th>日付</th>
                         <td class="text_display">
-                            {{ $corrections->work_date }}
+                            {{ $corrections->work_date->format('Y年n月j日') }}
                         </td>
                     </tr>
 

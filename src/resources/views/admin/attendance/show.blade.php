@@ -33,7 +33,7 @@ $rest2 = $detail->rests[1] ?? null;
                     {{-- 日付 --}}
                     <tr>
                         <th>日付</th>
-                        <td class="text_display">{{ $detail->work_date }}</td>
+                        <td class="text_display">{{ $detail->work_date->format('Y年n月j日') }}</td>
                     </tr>
 
                     {{-- 出勤・退勤 --}}
