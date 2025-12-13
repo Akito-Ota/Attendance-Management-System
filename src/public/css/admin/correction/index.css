@@ -1,4 +1,4 @@
-/* ----全体レイアウト---- */
+/* 全体レイアウト*/
 .correction-page {
     background-color: #f7f7f7;
     min-height: calc(100vh - 80px);
@@ -10,7 +10,7 @@
     margin: 0 auto;
 }
 
-/* ----タイトル---- */
+/* タイトル */
 .correction-title {
     font-size: 24px;
     font-weight: bold;
@@ -20,7 +20,7 @@
     line-height: 1.2;
 }
 
-/* ----タブ切り替え---- */
+/* タブ切り替え */
 /* ラジオボタンは隠す */
 .tab-input {
     display: none;
@@ -69,7 +69,7 @@
     background-color: #000;
 }
 
-/* --- パネルの表示切り替え --- */
+/* パネルの表示切り替え*/
 .tab-panel {
     display: none;
 }

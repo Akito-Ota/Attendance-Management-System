@@ -1,11 +1,11 @@
-/* --- ページ全体のレイアウト --- */
+/* 全体のレイアウト*/
 .staff_index {
     background-color: #f2f2f2;
     padding: 50px 0;
     min-height: calc(100vh - 100px);
 }
 
-/* --- タイトルとテーブルの共通配置設定 --- */
+/*  タイトルとテーブル */
 .index_title,
 .staff-table {
     width: 80%;
@@ -13,7 +13,7 @@
     margin: 0 auto;
 }
 
-/* --- タイトル部分のデザイン --- */
+/*  タイトル  */
 .index_title {
     font-size: 24px;
     font-weight: bold;
@@ -33,7 +33,7 @@
     margin-right: 15px;
 }
 
-/* --- テーブルデザイン --- */
+/*  テーブルデザイン  */
 .staff-table {
     background-color: #fff;
     border-radius: 10px;
@@ -42,7 +42,7 @@
     overflow: hidden;
 }
 
-/* --- テーブルのヘッダーとデータの共通設定 --- */
+/* テーブルのヘッダーとデータの共通設定*/
 .staff-table th,
 .staff-table td {
     padding: 15px 0;
@@ -50,19 +50,19 @@
     border-bottom: 1px solid #dcdcdc;
 }
 
-/* --- 項目名の設定 --- */
+/*  項目名の設定  */
 .staff-table th {
     font-size: 14px;
     font-weight: bold;
     color: #333;
 }
 
-/* --- 最後の行の下線を消す設定 --- */
+/*  最後の行の下線を消す設定  */
 .staff-table tr:last-child td {
     border-bottom: none;
 }
 
-/* --- 詳細リンク--- */
+/*  詳細リンク */
 .staff-table a {
     color: #333;
     text-decoration: none;

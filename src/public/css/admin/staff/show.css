@@ -60,7 +60,7 @@
     text-decoration: underline;
 }
 
-/* 色をグレーにする */
+/* 色をグレー */
 .nav-link.prev,
 .nav-link.next {
     color: #666;
@@ -157,6 +157,3 @@
     transition: opacity 0.3s;
 }
 
-.csv-button:hover {
-    opacity: 0.8;
-}

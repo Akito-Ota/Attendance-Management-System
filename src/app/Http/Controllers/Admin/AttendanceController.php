@@ -11,7 +11,7 @@ use App\Models\Correction;
 use App\Models\Rest;
 use App\Http\Requests\AttendanceCorrectionRequest;
 
-class AttendanceController extends Controller //その日の出勤一覧
+class AttendanceController extends Controller //その日出勤一覧
 {
     public function index(Request $request)
     {
@@ -38,15 +38,24 @@ class AttendanceController extends Controller //その日の出勤一覧
         $nextDate = $now->copy()->addDay();
 
         $weekday = $now->isoFormat('dddd');
-        return view('admin.attendance.index', compact('attendances','targetDate','prevDate','nextDate','dateString','now','weekday',
-            'prevDate','nextDate'));
+        return view('admin.attendance.index', compact(
+            'attendances',
+            'targetDate',
+            'prevDate',
+            'nextDate',
+            'dateString',
+            'now',
+            'weekday',
+            'prevDate',
+            'nextDate'
+        ));
     }
 
     public function show($id) //詳細画面に遷移・表示
     {
-        $detail = Attendance::with('user','rests')
-                    ->findOrFail($id);
-        return view ('admin.attendance.show',compact('detail'));
+        $detail = Attendance::with('user', 'rests')
+            ->findOrFail($id);
+        return view('admin.attendance.show', compact('detail'));
     }
 
 
@@ -112,4 +121,3 @@ class AttendanceController extends Controller //その日の出勤一覧
             ->with('status', '勤怠を修正しました。');
     }
 }
-

@@ -99,3 +99,52 @@
 .register__login-link:hover {
     text-decoration: underline;
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 850px) {
+    .register__inner {
+        max-width: 700px;
+    }
+
+    .register__title {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    .register__inner {
+        max-width: 900px;
+    }
+
+    .register__title {
+        font-size: 32px;
+        margin-bottom: 60px;
+    }
+
+    .form__row {
+        margin-bottom: 40px;
+    }
+
+    .form__label {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .form__control {
+        padding: 18px 15px;
+        font-size: 18px;
+    }
+
+    .form__actions {
+        margin-top: 50px;
+    }
+
+    .button--primary {
+        padding: 20px 0;
+        font-size: 20px;
+    }
+
+    .register__login-link {
+        font-size: 16px;
+    }
+}
