@@ -1,0 +1,162 @@
+/* 全体レイアウト*/
+.attendance-page {
+    background-color: #f0f0f0;
+    min-height: calc(100vh - 80px);
+    padding: 40px 20px;
+}
+
+.attendance-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* タイトル */
+.attendance-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    border-left: 5px solid #000;
+    line-height: 1.2;
+    color: #000;
+}
+
+/* 月切り替えナビゲーション */
+.month-navigation {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.current-month {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.calendar-icon {
+    font-size: 20px;
+}
+
+.nav-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #f5f5f5;
+    text-decoration: underline;
+}
+
+/* 色をグレーにする */
+.nav-link.prev,
+.nav-link.next {
+    color: #666;
+}
+
+/* 勤怠テーブル */
+.table-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* ヘッダー行 */
+.attendance-table th {
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    color: #333;
+    white-space: nowrap;
+}
+
+/* データ行 */
+.attendance-table td {
+    padding: 18px 10px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    background-color: #fff;
+    vertical-align: middle;
+}
+
+/* 下線を消す */
+.attendance-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+
+/* 詳細リンク */
+.detail-link {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.detail-link:hover {
+    opacity: 0.7;
+}
+.csv-export-area {
+    width: 300%;
+    border-radius: 4px;
+    padding: 40px 15px;
+    margin-bottom: 10px;
+}
+
+/* CSV出力ボタンのデザイン */
+.csv-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 16px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.csv-export-area {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+/* CSV出力ボタンのデザイン */
+.csv-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.csv-button:hover {
+    opacity: 0.8;
+}

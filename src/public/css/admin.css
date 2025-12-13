@@ -1,0 +1,45 @@
+/* ヘッダー全体 */
+.site-header {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 80px;
+}
+
+/* ロゴ */
+.site-logo img {
+    height: 30px;
+    display: block;
+}
+
+/* ナビゲーションリスト */
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    gap: 40px;
+}
+
+/* メニューのリンク */
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* ログアウトボタン */
+.logout-button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0;
+}

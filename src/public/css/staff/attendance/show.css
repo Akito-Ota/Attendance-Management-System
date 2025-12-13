@@ -1,0 +1,145 @@
+/* 全体レイアウト*/
+.attendance_show {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+    min-height: 100vh;
+    color: #333;
+}
+
+.attendance_container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* タイトル*/
+.detail_title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    border-left: 6px solid #000;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+.attendance_card {
+    background-color: transparent;
+    padding: 0;
+}
+
+/* 表のデザイン */
+.attendance_table {
+    width: 100%;
+    background-color: #fff;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    table-layout: fixed;
+}
+
+/* テーブルの行・セル設定*/
+.attendance_table th,
+.attendance_table td {
+    padding: 30px 40px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+
+/* 左側のラベル (th) */
+.attendance_table th {
+    width: 20%;
+    text-align: left;
+    font-weight: normal;
+    font-size: 15px;
+    color: #333;
+
+}
+
+/* 右側の入力エリア (td) */
+.attendance_table td {
+    width: 80%;
+    font-size: 15px;
+}
+
+/* 名前・日付の表示エリア */
+.text_display {
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+    letter-spacing: 0.05em;
+}
+
+/* 入力フォーム*/
+.time_input_group {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* ""~""の部分 */
+.tilde {
+    font-size: 18px;
+    color: #333;
+    font-weight: normal;
+}
+
+/* 時間入力部分 */
+.form_time {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-size: 16px;
+    width: 140px;
+    text-align: center;
+    color: #333;
+    -webkit-appearance: none;
+    appearance: none;
+    letter-spacing: 1px;
+}
+
+
+/* 備考欄 */
+.form_textarea {
+    width: 100%;
+    min-height: 120px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+    resize: none;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+/* エラーメッセージ */
+.form-error {
+    color: #d32f2f;
+    font-size: 13px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* 修正ボタンエリア*/
+.button_area {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.submit_btn {
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 60px;
+    cursor: pointer;
+    transition: background-color 0.3s, opacity 0.3s;
+    letter-spacing: 1px;
+}

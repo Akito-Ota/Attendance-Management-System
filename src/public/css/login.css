@@ -1,0 +1,103 @@
+/* 全体の設定 */
+* {
+    box-sizing: border-box;
+}
+
+/* ページ全体を囲む*/
+.login-wrapper {
+    width: 100%;
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 0 20px;
+
+}
+
+/* ログインタイトル */
+.login-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* フォームのコンテナ */
+.login-container {
+    width: 100%;
+}
+
+/* ラベル＋入力欄 */
+.form-group {
+    margin-bottom: 30px;
+}
+
+/* メールアドレス、パスワード */
+.form-label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* 入力欄 */
+.form-input {
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* 入力欄にフォーカスが当たった時 */
+.form-input:focus {
+    border-color: #333;
+}
+
+/* エラーメッセージ */
+.form-error {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* ボタン周りのレイアウト */
+.form-action {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* ログインボタン */
+.login-button {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 15px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+/* ボタンホバー時 */
+.login-button:hover {
+    opacity: 0.8;
+}
+
+/* 会員登録リンク */
+.register-link {
+    text-align: center;
+}
+
+.register-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}

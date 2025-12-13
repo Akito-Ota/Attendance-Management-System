@@ -1,0 +1,100 @@
+@extends('layouts.staff')
+
+@section('title', '申請後詳細画面')
+{{-----従業員側-----}}
+
+@push('styles')
+<link rel="stylesheet" href="{{ asset('css/staff/correction/show.css') }}">
+@endpush
+
+@section('content')
+@php
+$rest1 = $detail->rests[0] ?? null;
+$rest2 = $detail->rests[1] ?? null;
+@endphp
+
+<div class="attendance_show">
+    <div class="attendance_container">
+
+        <h1 class="detail_title">勤怠詳細</h1>
+
+        <div class="attendance_card">
+            <table class="attendance_table">
+
+                {{-- 名前 --}}
+                <tr>
+                    <th>名前</th>
+                    <td class="text_display">{{ $corrections->user->name }}</td>
+                </tr>
+
+                {{-- 日付 --}}
+                <tr>
+                    <th>日付</th>
+                    <td class="text_display">{{ $corrections->work_date->format('Y年n月j日') }}</td>
+                </tr>
+
+                {{-- 出勤・退勤 --}}
+                <tr>
+                    <th>出勤・退勤</th>
+                    <td>
+                        <div class="time_input_group">
+                            <span class="text_display">{{ $corrections->start_time->format('H:i') }}</span>
+                            <span class="title">〜</span>
+                            <span class="text_display">{{ $corrections->end_time->format('H:i') }}</span>
+                        </div>
+                    </td>
+                </tr>
+
+                {{-- 休憩 --}}
+                <tr>
+                    <th>休憩</th>
+                    <td>
+                        <div class="time_input_group">
+                            <span class="text_display">
+                                {{ $corrections->rest_start?->format('H:i') ?? '' }}
+                            </span>
+                            <span class="title">〜</span>
+                            <span class="text_display">
+                                {{ $corrections->rest_end?->format('H:i') ?? '' }}
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+
+                {{-- 休憩2 --}}
+                <tr>
+                    <th>休憩2</th>
+                    <td>
+                        <div class="time_input_group">
+                            <span class="text_display">{{ $corrections->rest_start2?->format('H:i') ?? '' }}</span>
+                            <span class="title">〜</span>
+                            <span class="text_display">{{ $corrections->rest_end2?->format('H:i') ?? '' }}</span>
+                        </div>
+                    </td>
+                </tr>
+
+                {{-- 備考 --}}
+                <tr>
+                    <th>備考</th>
+                    <td class="text_display">{{ $corrections->remark }}</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="status_message_area">
+            @if ($corrections->status === 'pending')
+            <p class="status_message status_message--pending">
+                ※承認待ちのため修正はできません。
+            </p>
+            @elseif ($corrections->status === 'approved')
+            <p class="status_message status_message--approved">
+                ※承認済みです。
+            </p>
+            @endif
+        </div>
+
+    </div>
+</div>
+
+@endsection

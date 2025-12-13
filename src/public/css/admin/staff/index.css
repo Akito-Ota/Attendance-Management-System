@@ -1,0 +1,72 @@
+/* --- ページ全体のレイアウト --- */
+.staff_index {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+    min-height: calc(100vh - 100px);
+}
+
+/* --- タイトルとテーブルの共通配置設定 --- */
+.index_title,
+.staff-table {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- タイトル部分のデザイン --- */
+.index_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+/* タイトルの左側の黒い縦線 */
+.index_title::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 30px;
+    background-color: #000;
+    margin-right: 15px;
+}
+
+/* --- テーブルデザイン --- */
+.staff-table {
+    background-color: #fff;
+    border-radius: 10px;
+    border-collapse: collapse;
+    border-style: hidden;
+    overflow: hidden;
+}
+
+/* --- テーブルのヘッダーとデータの共通設定 --- */
+.staff-table th,
+.staff-table td {
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+/* --- 項目名の設定 --- */
+.staff-table th {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* --- 最後の行の下線を消す設定 --- */
+.staff-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* --- 詳細リンク--- */
+.staff-table a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+

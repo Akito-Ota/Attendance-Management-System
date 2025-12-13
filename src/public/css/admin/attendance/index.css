@@ -1,0 +1,103 @@
+/* ページ全体 */
+.attendance-page {
+    background-color: #f5f5f5;
+    padding: 40px 60px;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* タイトルセクション */
+.page-header {
+    margin-bottom: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: bold;
+    border-left: 5px solid #333;
+    padding-left: 15px;
+    margin: 0;
+}
+
+/*日付操作バー*/
+.date-navigation {
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 14px;
+    color: #999;
+    transition: color 0.3s;
+}
+
+.nav-btn:hover {
+    color: #333;
+}
+
+.current-date-display {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* テーブル */
+.table-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.attendance-table {
+    width: 100%;
+    background-color: #fff;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.attendance-table th,
+.attendance-table td {
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* ヘッダー行のデザイン */
+.attendance-table thead tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.attendance-table th {
+    font-weight: bold;
+    color: #333;
+}
+
+/* データ行のデザイン */
+.attendance-table tbody tr {
+    border-top: 1px solid #eee;
+}
+
+/* 詳細リンク */
+.detail-link {
+    text-decoration: none;
+    color: #333;
+    padding-bottom: 2px;
+    font-size: 12px;
+}
