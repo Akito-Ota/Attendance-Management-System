@@ -18,7 +18,14 @@ class AttendanceSeeder extends Seeder
      */
     public function run()
     {
-        $user = User::where('email', 'test@example.com')->first();
+        $user = User::updateOrCreate(
+            ['email' => 'test@example.com'],
+            [
+                'name' => 'Staff.Test',
+                'password' => bcrypt('password'),
+                'role' => 'staff',
+            ]
+        );
         $userId = $user->id;
         $from = Carbon::today()->subMonths(2)->startOfMonth();
         $to = Carbon::today()->endOfMonth();
